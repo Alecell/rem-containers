@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {
+      font-size: 62.5%;
+    }
+
+    .wrap {
+      margin: 0 auto;
+      max-width: 120rem;
+      font-size: 1.6rem;
+      outline: 1px solid red;
+    }
+
+    .container {
+      width: 100%;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    .outro-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 3rem;
+    }
+
+    .slider {
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <h1>titulo</h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam rem dolore adipisci nostrum inventore hic vero? Incidunt sint iure maxime! Praesentium ullam, porro deleniti obcaecati fugit nemo, corrupti iure exercitationem tempora dolor soluta nulla earum id. Aliquam placeat dicta saepe laboriosam, quis earum assumenda sunt, debitis non quae error eligendi eum, nulla impedit vero ullam temporibus? Odit aspernatur culpa veritatis unde excepturi corporis quae esse repellat, at est distinctio explicabo inventore doloribus nam a ut quis quaerat quidem nesciunt dicta facere? Nemo eaque at cum aperiam perferendis iusto, dolore voluptatum. Provident expedita eius odit doloribus magnam hic error commodi praesentium rem perferendis ipsum earum officia voluptate quasi architecto, id autem excepturi voluptatum quam nam! Qui inventore mollitia perferendis nesciunt dolore ea rem possimus suscipit doloribus. Est eligendi facere culpa nesciunt eum fugiat praesentium non maiores porro, obcaecati quibusdam consequatur autem quod dolore voluptatum inventore quia esse tempora dolorum odit magni. Voluptatibus incidunt, quidem consequuntur aspernatur quis praesentium ea a veritatis dignissimos vero laboriosam minima in dicta et animi magni omnis iusto reprehenderit excepturi! Corporis, ducimus libero ipsam incidunt quos nostrum porro, harum cum obcaecati quo maiores eius vero deserunt velit quas laboriosam doloremque amet perferendis ut, quidem et reprehenderit. Harum!
+    </div>
+    <div class="outro-container">
+      <div class="conteido-interno">
+        <h2>titulo</h2>
+        conteudo
+      </div>
+      <div class="conteido-interno">
+        <h2>titulo</h2>
+        conteudo
+      </div>
+    </div>
+  </div>
+  <div class="slider">
+    <label for="font">altere o tamanho da fonte</label>
+    <input type="text" id="font">
+  </div>
+</body>
+<script>
+  window.onload = function() {
+    const range = document.querySelector('#font');
+
+    range.addEventListener('input', (e) => {
+      document.documentElement.style.fontSize = e.target.value;
+      document.body.style.fontSize = e.target.value;
+    })
+  }
+</script>
+</html>
